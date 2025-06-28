@@ -6,7 +6,7 @@
 /*   By: ilyas-guney <ilyas-guney@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/27 15:42:55 by ilyas-guney       #+#    #+#             */
-/*   Updated: 2025/06/28 01:14:19 by ilyas-guney      ###   ########.fr       */
+/*   Updated: 2025/06/28 02:18:35 by ilyas-guney      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,8 @@ void	add_token(t_token **tokens, t_token_type type, char *value, int quoted)
 	t_token *new_token;
 	t_token *current;
 
+	if (!ft_strlen(value))
+		return ;
 	new_token = malloc(sizeof(t_token));
 	if (!new_token)
 		exit(1);

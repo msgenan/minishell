@@ -15,8 +15,9 @@ LIBFT       = $(LIBFT_DIR)/libft.a
 
 SRCS = \
 	src/main.c \
-	src/parser/parser.c \
 	src/lexer/lexer.c \
+	src/lexer/utils.c \
+	src/parser/parser.c \
 	# src/executor/executor.c \
 	# src/builtins/echo.c \
 	# src/builtins/cd.c \
