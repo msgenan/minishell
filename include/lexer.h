@@ -28,4 +28,8 @@ void	handle_redirection(t_token **tokens, char **input);
 char	*extract_quoted_string(char **input);
 char	*extract_word(char **input);
 
+int		ft_isspace(char c);
+void	skip_whitespace(char **input);
+
+
 #endif
